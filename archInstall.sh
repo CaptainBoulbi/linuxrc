@@ -266,7 +266,10 @@ arch-chroot /mnt /script.sh
 arch-chroot /mnt rm /script.sh
 
 if [ $INSTALLGUI -eq 1 ]; then
-	arch-chroot /mnt sudo ./linuxrc.sh
+	cp linuxrc.sh /mnt/home/$USRNAME
+	arch-chroot /mnt chmod +x /home/$USRNAME/linuxrc.sh
+	arch-chroot /mnt sudo /home/$USRNAME/linuxrc.sh
+	arch-chroot /mnt rm /home/$USRNAME/linuxrc.sh
 fi
 
 next "reboot"
