@@ -1,16 +1,16 @@
 #!/bin/bash
 
-cd /home/$USRNAME
+cd ~
 
 # installation paquet
 
 
 # base
-pacman -S --noconfirm xorg-server xorg-xinit xterm neofetch git
+sudo pacman -S --noconfirm xorg-server xorg-xinit xterm neofetch git
 # fonts
-pacman -S --noconfirm ttf-linux-libertine ttf-inconsolata
+sudo pacman -S --noconfirm ttf-linux-libertine ttf-inconsolata
 # dependence suckless tools et xorg
-pacman -S --noconfirm libx11 libxft libxinerama freetype2 fontconfig xf86-video-vmware
+sudo pacman -S --noconfirm libx11 libxft libxinerama freetype2 fontconfig xf86-video-vmware
 
 
 # configuration
