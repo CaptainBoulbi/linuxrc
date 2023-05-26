@@ -65,7 +65,7 @@ USRNAME=usr					# nom de l'utilisateur principale
 USRPWD=$ROOTPWD				# mdp utilisateur principale
 SUDOERS=1					# 1=droit sudo; 0=pas droit sudo
 SUDOSANSPASSWD=1			# sudo cmd sans mdp (1=true;0=false)
-LOGATBOOT=1					# au lancement se connecter automatiquement utile pour crypter
+LOGATBOOT=0					# au lancement se connecter automatiquement utile pour crypter
 
 # langue
 LANGUE_CLAVIER=fr-latin1 	# liste langue clavier : ls /usr/share/kbd/keymaps/**/*.map.gz
