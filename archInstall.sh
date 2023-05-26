@@ -28,13 +28,18 @@
 # puis séléctionné install arch (ou un truc dans le genre)
 #
 # installer script :
+#
 # faite loadkeys fr-latin1 (ou autre)
 # pour faciliter l'ecriture des commandes qui suivent
 # car par defaut le clavier est en qwerty
 #
-# installer ce script sur l'installeur :
+# l'installation ce fait par git, donc il faut installer git:
+# pacman -Sy git
 #
-# lol
+# git clone https://github.com/CaptainBoulbi/linuxrc.git
+# cd linuxrc
+# 
+# le script est le archInstall.sh
 # 
 # configurer script :
 #
@@ -42,8 +47,8 @@
 # chaque variable a son explication a coté
 #
 # une fois la configuration faite, faite :
-# chmod +x ./archAtHome.sh
-# ./archAtHome.sh
+# chmod +x ./archInstall.sh
+# ./archInstall.sh
 #
 # attendez que l'instalation ce fini puis eteindre le pc (demander a la fin de l'install)
 # enlevez la clé et re allumer votre pc
