@@ -43,4 +43,4 @@ cd
 touch .xinitrc
 echo "exec /usr/local/bin/dwm" > .xinitrc
 
-systemctl enable xorg
+echo "[[ ! \$DISPLAY && \$XDG_VTNR -eq 1 ]] && startx" >> .bash_profile
