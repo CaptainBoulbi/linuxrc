@@ -44,3 +44,7 @@ touch .xinitrc
 echo "exec /usr/local/bin/dwm" > .xinitrc
 
 echo "[[ ! \$DISPLAY && \$XDG_VTNR -eq 1 ]] && startx" >> .bash_profile
+
+echo "installatin fini, appuez sur entrez pour redemarrer"
+read
+reboot
