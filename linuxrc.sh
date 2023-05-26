@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd ~/home/cptvmt
 
 # installation paquet
 
@@ -19,11 +20,13 @@ localectl set-x11-keymap fr
 
 
 # installer suckless truc (temps pas besoin plus tard)
+mkdir .suckless
+cd .suckless
+
 git clone https://git.suckless.org/dwm
 git clone https://git.suckless.org/st
 git clone https://git.suckless.org/dmenu
 
-cd .suckless
 cd dwm
 make
 sudo make clean install
@@ -36,3 +39,5 @@ cd dmenu
 make
 sudo make clean install
 cd
+
+touch .xinitrc

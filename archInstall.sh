@@ -261,7 +261,7 @@ arch-chroot /mnt /script.sh
 arch-chroot /mnt rm /script.sh
 
 if [ $INSTALLGUI -eq 1 ]; then
-	echo "TODO : gui lol"
+	arch-chroot /mnt sudo ./linuxrc.sh
 fi
 
 next "reboot"
