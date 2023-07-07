@@ -17,6 +17,7 @@ sudo pacman -S --noconfirm libx11 libxft libxinerama freetype2 fontconfig xf86-v
 
 
 localectl set-x11-keymap fr
+loadkeys fr-latin1
 
 
 # installer suckless truc (temps pas besoin plus tard)
